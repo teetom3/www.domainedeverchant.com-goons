@@ -10,7 +10,7 @@
       '<span class="goons-logo"><img src="' +
       (window.location.pathname.includes("/fr/") ? "../" : "./") +
       '/assets/images/footer-logo-degrade.png" alt="Goons"></span>' +
-      '<span class="goons-text">Serveur de préprod Goons</span>' +
+      '<span class="goons-text">Serveur de pré-prod Goons</span>' +
       "</div>";
 
     // cible : juste après le header si trouvé, sinon tout en haut du body
