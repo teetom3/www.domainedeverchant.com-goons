@@ -1,0 +1,70 @@
+/* Bandeau Goons — violet + sticky */
+#goons-banner {
+  position: sticky; /* reste en haut au scroll */
+  top: 0;
+  z-index: 9999; /* au-dessus du header et overlays */
+  width: 100%;
+  background: #6c2bd9; /* violet Goons, adapte si besoin (#7c3aed / #8b5cf6) */
+  color: #fff;
+  font-family: "Open Sans", system-ui, -apple-system, Segoe UI, Roboto, Arial,
+    sans-serif;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+#goons-banner .goons-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+#goons-banner .goons-logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+}
+
+#goons-banner .goons-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+#goons-banner .goons-text {
+  font-size: 14px;
+  line-height: 1.3;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+#goons-banner .goons-link {
+  margin-left: auto;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  padding: 6px 10px;
+  border-radius: 999px;
+}
+
+#goons-banner .goons-link:hover,
+#goons-banner .goons-link:focus {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Mobile tweaks */
+@media (max-width: 640px) {
+  #goons-banner .goons-text {
+    font-size: 13px;
+  }
+  #goons-banner .goons-link {
+    display: none;
+  } /* optionnel : cacher le bouton sur petits écrans */
+}

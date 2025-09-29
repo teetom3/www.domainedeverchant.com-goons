@@ -1,0 +1,2513 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <!-- Mirrored from www.domainedeverchant.com/fr/politique-confidentialite.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 29 Sep 2025 08:26:33 GMT -->
+  <!-- Added by HTTrack --><meta
+    http-equiv="content-type"
+    content="text/html;charset=utf-8"
+  /><!-- /Added by HTTrack -->
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      :root {
+        --4805829: url("../_img/banner.jpg");
+        --5150064: url("../_img/menu-hotel.jpg");
+      }
+    </style>
+    <script>
+      function class_wihp_ln_already_redir() {
+        var plugin = this;
+        this.cookie_name = "ln_already_redir";
+        this.uri = window.location.pathname;
+        this.query_string = window.location.search;
+        this.browser_lang = navigator.language || navigator.userLanguage;
+        this.ln = "fr";
+        this.front_ln = "en";
+        this.site_langs = "en,fr";
+        this.site_langs_published = "en,fr";
+        class_wihp_ln_already_redir.prototype.load = function () {
+          var flag_set_cookie = false;
+          var flag_cookie_exist = this.cookie_exists(plugin.cookie_name);
+          if (this.cookie_exists("novacms_cook")) {
+            console.log("first novacms_cook");
+            return false;
+          }
+          if (this.cookie_exists(plugin.cookie_name)) {
+            if (this.uri != "/" || !this.is_empty(this.uri)) {
+              console.log("cookie exists but still redirecting");
+            } else {
+              console.log("cookie exists but not redirecing");
+              return;
+            }
+          }
+          if (this.uri != "/" || !this.is_empty(this.uri)) {
+            if (this.uri != "https://www.domainedeverchant.com/") {
+              this.set_cookie(this.cookie_name, 1, 365);
+              console.log("setting cookie and running not redirecting tpl");
+              return;
+            }
+          }
+          if (this.is_empty(this.browser_lang)) {
+            flag_set_cookie = true;
+          } else {
+            this.browser_lang = this.browser_lang.substring(0, 2);
+          }
+          if (this.browser_lang == this.ln) {
+            flag_set_cookie = true;
+          }
+          if (flag_set_cookie) {
+            this.set_cookie(this.cookie_name, 1, 365);
+            console.log(
+              "setting cookie basedon a few things and not redirecing"
+            );
+            return;
+          }
+          this.set_cookie(this.cookie_name, 1, 365);
+          var localized_url = "https://www.domainedeverchant.com/";
+          var chosen_lang = "";
+          var flag_valid_lang = false;
+          if (this.browser_lang != this.front_ln) {
+            localized_url += this.browser_lang + "/";
+            chosen_lang = this.browser_lang;
+          } else if (!this.is_empty(this.ln) && this.browser_lang != this.ln) {
+            localized_url += this.ln;
+            chosen_lang = this.ln;
+          }
+          if (!this.is_empty(this.site_langs_published)) {
+            if (this.site_langs_published.indexOf(chosen_lang) != -1) {
+              flag_valid_lang = true;
+            } else {
+            }
+          } else if (this.site_langs.indexOf(chosen_lang) != -1) {
+            flag_valid_lang = true;
+          }
+          if (flag_valid_lang) {
+            if (this.query_string != "") {
+              localized_url += "?" + this.query_string;
+            }
+            console.log("redirecting");
+            window.location = localized_url;
+          }
+          return;
+        };
+        class_wihp_ln_already_redir.prototype.cookie_exists = function (
+          cookie_name
+        ) {
+          var exists = false;
+          var this_cookie = this.get_cookie(cookie_name);
+          if (!this.is_empty(this_cookie)) {
+            var exists = true;
+          }
+          return exists;
+        };
+        class_wihp_ln_already_redir.prototype.is_empty = function (value) {
+          if (
+            !value ||
+            typeof value === "undefined" ||
+            value == "" ||
+            value === "0" ||
+            value === 0 ||
+            value == null ||
+            value == "NaN"
+          ) {
+            return true;
+          }
+          return false;
+        };
+        class_wihp_ln_already_redir.prototype.set_cookie = function (
+          cname,
+          cvalue,
+          exdays
+        ) {
+          var d = new Date();
+          d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
+          var expires = "expires=" + d.toUTCString();
+          document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+        };
+        class_wihp_ln_already_redir.prototype.get_cookie = function (cname) {
+          var name = cname + "=";
+          var decodedCookie = decodeURIComponent(document.cookie);
+          var ca = decodedCookie.split(";");
+          for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == " ") {
+              c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+              return c.substring(name.length, c.length);
+            }
+          }
+          return "";
+        };
+      }
+      classwihplnalreadyredir = new class_wihp_ln_already_redir();
+      classwihplnalreadyredir.load();
+    </script>
+    <link rel="canonical" href="politique-confidentialite.html" />
+    <meta
+      name="google-site-verification"
+      content="yEw7MGvRm8qf7jMgznOTenoGygEHF7xu1ZraoDkvfDk"
+    />
+    <script type="text/javascript">
+      function pload() {
+        var m = this;
+        m.q = [];
+        m.a = function (f) {
+          m.i(f);
+        };
+        m.i = function (f) {
+          m.q.push(f);
+        };
+        m.f = function () {
+          var f;
+          while ((f = m.q.shift())) f();
+          m.r();
+        };
+        m.r = function () {
+          m.i = function (f) {
+            f();
+          };
+        };
+      }
+      pnl = new pload();
+      $$ = pnl.a;
+      pnla = new pload();
+      $$$ = pnla.a;
+    </script>
+    <title>
+      Le Domaine de Verchant | Hôtel & Spa 5 étoiles à Montpellier, membre
+      Relais & Châteaux | Politique de confidentialité
+    </title>
+    <meta
+      name="description"
+      content="Veuillez lire la Politique de confidentialité du Domaine de Verchant, un hôtel et spa 5 étoiles situé à proximité de Montpellier, dans le sud de la France."
+    />
+    <meta http-equiv="content-language" content="fr" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta
+      name="viewport"
+      content="initial-scale=1, width=device-width, user-scalable=yes"
+    />
+    <meta name="apple-mobile-web-app-status-bar-style" content="white" />
+    <link
+      rel="alternate"
+      href="https://www.domainedeverchant.com/privacy-policy.html"
+      hreflang="x-default"
+    />
+    <link
+      rel="alternate"
+      href="https://www.domainedeverchant.com/en/privacy-policy.html"
+      hreflang="en"
+    />
+    <link rel="alternate" href="politique-confidentialite.html" hreflang="fr" />
+    <link rel="icon" type="image/png" href="../favicon.png" />
+    <script type="text/javascript">
+      (function () {
+        var d = document;
+        var s = d.createElement("script");
+        s.type = "text/javascript";
+        s.defer = true;
+        s.src = "../assets/scripts1323.js?v=14501005";
+        (
+          d.getElementsByTagName("head")[0] || d.getElementsByTagName("body")[0]
+        ).appendChild(s);
+      })();
+    </script>
+    <noscript>
+      <iframe
+        src="http://www.googletagmanager.com/ns.html?id=GTM-M5B6WMQ"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe>
+    </noscript>
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "../../www.googletagmanager.com/gtm5445.html?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-M5B6WMQ");
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <link rel="stylesheet" href="../assets/styles0ab9.css?v=1450" />
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400;500;700&amp;family=Antic+Didone&amp;family=Open+Sans&amp;display=swap"
+      rel="stylesheet"
+    />
+    <style type="text/css">
+      @keyframes movein {
+        from {
+          left: -320px;
+        }
+        to {
+          left: 10px;
+        }
+      }
+      @keyframes moveout {
+        from {
+          left: 10px;
+        }
+        to {
+          left: -320px;
+        }
+      }
+    </style>
+  </head>
+  <body id="disclaimer" class="fr" onLoad="window._pulsarDocLoad=true">
+    <header id="header">
+      <div class="overlay hide-mobile" data-aos="fade"></div>
+      <div class="wrapper">
+        <ul
+          class="header-links hide-mobile flex"
+          data-aos="fade-right"
+          data-aos-delay="300"
+        >
+          <li>
+            <div class="btn-desktop-sidebar btn-nav hide-mobile flex">
+              <div class="hamburger-wrap">
+                <span></span> <span></span> <span></span>
+              </div>
+            </div>
+          </li>
+          <li><a class="icon phone-icon" href="tel:+33-4-67-07-26-00"></a></li>
+          <li>
+            <a
+              class="icon mail-icon"
+              href="mailto:mailto:reservation@verchant.com"
+            ></a>
+          </li>
+          <li><a class="icon pin-icon" href="plan.html"></a></li>
+        </ul>
+        <a class="logo" href="index.html">
+          <img
+            class="hide-mobile"
+            src="https://www.domainedeverchant.com/_img/logo-desktop.svg"
+            alt="Domaine de Verchant"
+            data-aos="fade"
+            data-aos-delay="0"
+          />
+          <img
+            class="hide-desktop"
+            src="https://www.domainedeverchant.com/_img/logo-mobile.svg"
+            alt="Domaine de Verchant"
+          />
+          <img
+            class="logo-second-header"
+            src="https://www.domainedeverchant.com/_img/logo-white.svg"
+            alt="Domaine de Verchant"
+          />
+        </a>
+        <ul
+          class="header-links right"
+          data-aos="fade-left"
+          data-aos-delay="300"
+        >
+          <li class="hide-desktop flex">
+            <a id="language_btn" class="lang-btn" href="javascript:void(0)"
+              >fr</a
+            >
+          </li>
+          <li class="hide-desktop flex">
+            <a
+              class="phone-icon"
+              editablelink="yes"
+              novaref="4978594"
+              novatype="txt"
+              data-global="1"
+              href="tel:+33-4-67-07-26-00"
+              target="_blank"
+              >+33-4-67-07-26-00</a
+            >
+          </li>
+          <li class="hide-mobile flex">
+            <a
+              class="giftbox"
+              editablelink="yes"
+              novaref="4895267"
+              novatype="txt"
+              data-global="1"
+              href="https://domainedeverchant.secretbox.fr/"
+              target="_blank"
+              >COFFRETS CADEAUX</a
+            >
+          </li>
+          <li class="hide-mobile flex">
+            <a
+              href="javascript:void(0)"
+              class="btn btn-book book-menu-open hide-mobile flex"
+              >RÉSERVER</a
+            >
+          </li>
+          <li class="hide-mobile flex">
+            <img
+              src="https://www.domainedeverchant.com/_img/logo-relais.svg"
+              width="65"
+              height="68"
+              alt="Relais & Chateaux"
+            />
+          </li>
+        </ul>
+      </div>
+    </header>
+    <div class="book-menu">
+      <div class="book-menu-left">
+        <img
+          src="https://www.domainedeverchant.com/_img/logo-reservation.svg"
+          alt="Domaine de Verchant"
+        />
+      </div>
+      <div id="book-menu-right" class="book-menu-right">
+        <div class="inner">
+          <span
+            class="subtitle centered"
+            novaref="4805723"
+            novatype="txt"
+            data-global="1"
+            >Réservations</span
+          >
+          <article>
+            <h2
+              class="title centered"
+              novaref="4805724"
+              novatype="txt"
+              data-global="1"
+            >
+              Domaine de Verchant
+            </h2>
+            <a
+              class="btn btn-secondary btn-nofloat"
+              editablelink="yes"
+              novaref="4805725"
+              novatype="txt"
+              data-global="1"
+              href="https://www.secure-hotel-booking.com/smart/Domaine-de-Verchant/JBCC/"
+              target="_blank"
+              >Réservez une chambre</a
+            >
+          </article>
+          <article>
+            <h2
+              class="title centered"
+              novaref="5533630"
+              novatype="txt"
+              data-global="1"
+            >
+              Maison Verchant
+            </h2>
+            <a
+              class="btn btn-secondary btn-nofloat"
+              editablelink="yes"
+              novaref="5009800"
+              novatype="txt"
+              data-global="1"
+              href="https://www.secure-hotel-booking.com/smart/La-Maison-Verchant/JSYG/fr/"
+              >Maison Verchant</a
+            >
+          </article>
+          <article>
+            <h2
+              class="title centered"
+              novaref="4805726"
+              novatype="txt"
+              data-global="1"
+            >
+              Restaurant Marcelle
+            </h2>
+            <a
+              class="btn btn-secondary btn-nofloat"
+              editablelink="yes"
+              novaref="4805727"
+              novatype="txt"
+              data-global="1"
+              href="https://widget.thefork.com/fr/0bdca60f-3bf4-4848-a5cb-eb228b173f95"
+              target="_blank"
+              >Réservez une table</a
+            >
+          </article>
+          <article>
+            <h2
+              class="title centered"
+              novaref="4805728"
+              novatype="txt"
+              data-global="1"
+            >
+              Restaurant La Plage
+            </h2>
+            <a
+              class="btn btn-secondary btn-nofloat"
+              editablelink="yes"
+              novaref="4805729"
+              novatype="txt"
+              data-global="1"
+              href="https://bookings.zenchef.com/results?rid=358151&amp;pid=1001"
+              target="_blank"
+              >Réservez une table</a
+            >
+          </article>
+          <article>
+            <h2
+              class="title centered"
+              novaref="4805730"
+              novatype="txt"
+              data-global="1"
+            >
+              Le Spa Verchant
+            </h2>
+            <a
+              class="btn btn-secondary btn-nofloat"
+              editablelink="yes"
+              novaref="4805731"
+              novatype="txt"
+              data-global="1"
+              href="https://book.pure-informatique.com/?locationID=51334"
+              target="_blank"
+              >Clients de l'hôtel</a
+            >
+            <br />
+            <a
+              class="btn btn-secondary btn-nofloat"
+              editablelink="yes"
+              novaref="5065422"
+              novatype="txt"
+              data-global="1"
+              href="https://book.pure-informatique.com/?locationID=51334"
+              >Clients Extérieurs</a
+            >
+          </article>
+          <article>
+            <h2
+              class="title centered"
+              novaref="5442752"
+              novatype="txt"
+              data-global="1"
+            >
+              La cave
+            </h2>
+            <a
+              class="btn btn-secondary btn-nofloat"
+              editablelink="yes"
+              novaref="5442753"
+              novatype="txt"
+              data-global="1"
+              href="https://www.wineactivities.net/api/1721390217737_0wjqjo551/?nocache"
+              target="_blank"
+              >Réservations de dégustation</a
+            >
+            <br />
+            <a
+              class="btn btn-secondary btn-nofloat"
+              editablelink="yes"
+              novaref="5442754"
+              novatype="txt"
+              data-global="1"
+              href="https://www.wineactivities.net/vente/1721390217737_0wjqjo551/?nocache"
+              target="_blank"
+              >Boutique en ligne</a
+            >
+          </article>
+        </div>
+      </div>
+      <a href="javascript:void(0)" class="book-menu-close"
+        ><span class="icon-close"></span
+      ></a>
+    </div>
+    <div class="container page-banner">
+      <div class="img-wrap">
+        <img
+          novaref="4805829"
+          novatype="img"
+          alt="image"
+          class="img-fit"
+          data-object-fit="cover"
+          src="../_img/banner.jpg"
+          width="2200"
+          height="904"
+          data-aos="fade"
+        />
+      </div>
+      <div
+        class="overlay hide-mobile"
+        data-aos="fade"
+        data-aos-delay="300"
+      ></div>
+      <div class="inner" data-aos="fade" data-aos-delay="300">
+        <h1 class="title centered" novaref="4805825" novatype="txt">
+          Politique de confidentialité
+        </h1>
+      </div>
+    </div>
+    <section class="container container--intro">
+      <div class="wrapper wrapper-padding">
+        <article class="post post--intro" data-aos="slide-up">
+          <h2 class="title centered" novaref="4805826" novatype="txt">
+            POLITIQUE DE CONFIDENTIALITÉ
+          </h2>
+          <div class="p-wrap centered">
+            <p novaref="4805827" novatype="multi">Posté le 28/01/2020</p>
+          </div>
+        </article>
+        <article class="post" data-aos="slide-up">
+          <div>
+            <p novaref="4805828" novatype="multi">
+              La confidentialité de votre vie privée revêt d'une importance
+              cruciale pour nous. Nous comprenons que votre confiance en nous
+              constitue notre priorité et c'est pourquoi la présente déclaration
+              de confidentialité s'applique à notre site web
+              https://www.domainedeverchant.com (ci-après le "Site") et à toutes
+              les relations ou non existant entre VERCHANT et ses clients ainsi
+              que ses partenaires. Nous prenons au sérieux la protection et le
+              respect de la vie privée des utilisateurs de notre site web et
+              prenons les mesures nécessaires pour le garantir. VERCHANT veille
+              à la protection des données personnelles des utilisateurs
+              conformément aux dispositions de la loi « Informatique et Libertés
+              » du 6 janvier 1978 modifiée et du Règlement Général sur la
+              Protection des Données (RGPD : n° 2016-679).
+            </p>
+            <p novaref="4805828" novatype="multi">
+              Qu'est-ce qu'une politique de confidentialité ? C'est un écrit qui
+              vous explique, en tant qu'utilisateur de notre site web, les
+              renseignements personnels que nous collectons sur vous, lorsque
+              vous naviguez sur notre Site. Nous nous engageons donc à respecter
+              la confidentialité des renseignements personnels que nous
+              collectons selon les modalités décrites ci-dessous. Nos
+              utilisateurs trouveront dans la présente « Politique de
+              Confidentialité » les renseignements personnels que nous
+              collectons à leur sujet, à quelles fins ces renseignements sont
+              utilisés, les moyens de les collecter, les moyens dont les
+              utilisateurs disposent pour s'opposer à la collecte ainsi que les
+              mesures de sécurité prises pour protéger leurs renseignements
+              personnels. On entend par « renseignements personnels » ou «
+              données à caractère personnel » toute information permettant
+              d'identifier un utilisateur, tels que : les noms, prénoms,
+              adresses postales et électroniques, numéros de téléphone, une
+              adresse IP, un identifiant de connexion informatique, etc.
+            </p>
+            <p novaref="4805828" novatype="multi">
+              Par l’intermédiaire du site web https://www.domainedeverchant.com,
+              VERCHANT peut être amené à collecter les données personnelles de
+              toute personne adressant une question à VERCHANT via la rubrique
+              "Contact" du Site, effectuant une réservation de séjour en ligne
+              ou s’inscrivant à la newsletter du site. La collecte et le
+              traitement des données personnelles transmises par l’utilisateur à
+              VERCHANT sont soumises aux dispositions de la loi « Informatique
+              et Libertés » du 6 janvier 1978 modifiée et du Règlement Général
+              sur la Protection des Données (RGPD : n° 2016-679).
+            </p>
+            <p novaref="4805828" novatype="multi">
+              Le Site https://www.domainedeverchant.com met à votre disposition
+              un formulaire vous permettant de faire appel à vos droits relatifs
+              à la protection de votre vie privée. Il vous suffit de cliquer sur
+              le lien suivant :
+              https://www.domainedeverchant.com/fr/formulaire-rgpd.
+            </p>
+            <p novaref="4805828" novatype="multi">
+              Veuillez lire assidûment la présente « Politique de
+              Confidentialité » en combinaison avec la « Politique en matière de
+              Cookies » de VERCHANT.
+            </p>
+            <p novaref="4805828" novatype="multi">
+              1 - COLLECTE DES DONNÉES À CARACTÈRE PERSONNEL
+            </p>
+            <p novaref="4805828" novatype="multi">
+              VERCHANT peut collecter et traiter les données à caractère
+              personnel, voir ci-dessous, lorsque vous remplissez un formulaire
+              de contact, ou autres, sur notre site
+              https://www.domainedeverchant.com.
+            </p>
+            <p novaref="4805828" novatype="multi">Nom</p>
+            <p novaref="4805828" novatype="multi">Prénom</p>
+            <p novaref="4805828" novatype="multi">Civilité</p>
+            <p novaref="4805828" novatype="multi">Raison sociale</p>
+            <p novaref="4805828" novatype="multi">Adresse postale</p>
+            <p novaref="4805828" novatype="multi">Adresse électronique</p>
+            <p novaref="4805828" novatype="multi">
+              Numéro de téléphone fixe / mobile
+            </p>
+            <p novaref="4805828" novatype="multi">Curriculum Vitae</p>
+            <p novaref="4805828" novatype="multi">Lettre de motivation</p>
+            <p novaref="4805828" novatype="multi">Coordonnées bancaires</p>
+            <p novaref="4805828" novatype="multi">
+              Les informations concernant l'utilisation que vous faites du Site
+              comme l'adresse IP, le type de navigateur, vos logiciels, votre
+              matériel, vos données de localisation géographique et la page web
+              que vous visitiez lorsque vous avez reçu l'accès au site internet.
+            </p>
+            <p novaref="4805828" novatype="multi">
+              En outre, VERCHANT collecte automatiquement des informations
+              anonymes concernant l'utilisation que vous faites de notre site
+              web https://www.domainedeverchant.com et de ses services. Ainsi,
+              VERCHANT, par exemple, enregistrera automatiquement quelles
+              parties du site internet vous visitez, quel navigateur internet
+              vous utilisez, quel site internet vous visitiez lorsque vous avez
+              reçu l'accès au site internet, ainsi que votre adresse IP. Nous ne
+              pouvons pas vous identifier sur la base de ces données, mais
+              celles-ci permettent à VERCHANT d'établir des statistiques
+              concernant l'utilisation du site web sur l’audience ainsi que
+              d'envoyer une communication plus ciblée. Les renseignements
+              personnels que nous collectons sont recueillis par l'entremise des
+              modes de collecte décrits ici-bas, dans la section « 2 - Modes de
+              collecte des données à caractère personnel ».
+            </p>
+            <p novaref="4805828" novatype="multi">
+              2 - MODES DE COLLECTE DES DONNÉES À CARACTÈRE PERSONNEL
+            </p>
+            <p novaref="4805828" novatype="multi">
+              Vos données à caractère personnel sont collectées par l'entremise
+              des méthodes suivantes :
+            </p>
+            <p novaref="4805828" novatype="multi">
+              Une collaboration avec VERCHANT
+            </p>
+            <p novaref="4805828" novatype="multi">
+              La visite sur le site internet https://www.domainedeverchant.com
+            </p>
+            <p novaref="4805828" novatype="multi">
+              La création d'un compte client
+            </p>
+            <p novaref="4805828" novatype="multi">
+              Le ou les formulaires de contact
+            </p>
+            <p novaref="4805828" novatype="multi">
+              Le formulaire de demande de devis
+            </p>
+            <p novaref="4805828" novatype="multi">
+              L'utilisation que vous faites des services de VERCHANT
+            </p>
+            <p novaref="4805828" novatype="multi">
+              La vérification de votre identité
+            </p>
+            <p novaref="4805828" novatype="multi">
+              L'inscription aux communications et à la newsletter (par le biais
+              du Site)
+            </p>
+            <p novaref="4805828" novatype="multi">
+              La correspondance échangée avec et émanant de VERCHANT
+            </p>
+            <p novaref="4805828" novatype="multi">
+              L'échange de cartes professionnelles
+            </p>
+            <p novaref="4805828" novatype="multi">
+              La réception et les échanges avec le personnel de l’établissement
+            </p>
+            <p novaref="4805828" novatype="multi">Le sondage d'opinion</p>
+            <p novaref="4805828" novatype="multi">
+              Les cookies (pour plus d'informations : « Politique en matière de
+              Cookies »)
+            </p>
+            <p novaref="4805828" novatype="multi">Des concours</p>
+            <p novaref="4805828" novatype="multi">
+              Les données à caractère personnel collectées par VERCHANT sont
+              donc expressément et volontairement fournies par vous.
+            </p>
+            <p novaref="4805828" novatype="multi">
+              3 - UTILISATION DES DONNÉES À CARACTÈRE PERSONNEL
+            </p>
+            <p novaref="4805828" novatype="multi">
+              https://www.domainedeverchant.com est susceptible de traiter ou
+              partie des données collectées pour :
+            </p>
+            <p novaref="4805828" novatype="multi">
+              Permettre la navigation sur le Site, la gestion et la traçabilité
+              des prestations et services commandés par l’utilisateur.
+            </p>
+            <p novaref="4805828" novatype="multi">
+              Optimiser l'expérience utilisateur, la qualité, la gestion, la
+              navigation et le contenu du site web de VERCHANT.
+            </p>
+            <p novaref="4805828" novatype="multi">
+              La création d'un compte client et la confirmation de cette
+              création.
+            </p>
+            <p novaref="4805828" novatype="multi">
+              Suivis de relation client/prospect sur les réservations.
+            </p>
+            <p novaref="4805828" novatype="multi">
+              La fourniture des biens et des services de VERCHANT.
+            </p>
+            <p novaref="4805828" novatype="multi">
+              Améliorer le service client et vos besoins de prise en charge.
+            </p>
+            <p novaref="4805828" novatype="multi">
+              La prise de contact : vous contacter par e-mail et/ou par
+              téléphone.
+            </p>
+            <p novaref="4805828" novatype="multi">
+              Pour mener des enquêtes de satisfaction, des études, et des
+              sondages facultatifs sur https://www.domainedeverchant.com.
+            </p>
+            <p novaref="4805828" novatype="multi">
+              L'envoi de campagnes marketing et de publicités ciblées provenant
+              de VERCHANT, les actualisations et les offres promotionnelles sur
+              la base de vos préférences et de votre consentement en matière de
+              communication.
+            </p>
+            <p novaref="4805828" novatype="multi">
+              Fournir un contenu publicitaire personnalisé.
+            </p>
+            <p novaref="4805828" novatype="multi">
+              L'envoi de devis, de reçus et de factures.
+            </p>
+            <p novaref="4805828" novatype="multi">
+              Collecter des éléments statistiques.
+            </p>
+            <p novaref="4805828" novatype="multi">L'élaboration d'une offre.</p>
+            <p novaref="4805828" novatype="multi">Administrer un concours.</p>
+            <p novaref="4805828" novatype="multi">
+              L'exécution d'un contrat conclu avec VERCHANT.
+            </p>
+            <p novaref="4805828" novatype="multi">
+              Pour prévenir et lutter contre la fraude informatique (spamming,
+              hacking…).
+            </p>
+            <p novaref="4805828" novatype="multi">
+              4 - CONFIDENTIALITÉ DE DONNÉES À CARACTÈRE PERSONNEL
+            </p>
+            <p novaref="4805828" novatype="multi">
+              VERCHANT est le seul propriétaire des informations recueillies sur
+              le Site https://www.domainedeverchant.com. Vos données à caractère
+              personnel ne seront pas vendues, échangées, transférées, ou
+              données à des tiers pour n'importe quelle raison, sans votre
+              consentement, en dehors de ce qui s'avère nécessaire pour répondre
+              à une demande et/ou transaction dans le cadre de la gestion de la
+              relation client, de la fourniture des services de VERCHANT et de
+              leur optimisation.
+            </p>
+            <p novaref="4805828" novatype="multi">
+              5 – RESPONSABLE DE LA COLLECTE DES DONNÉES À CARACTÈRE PERSONNEL
+            </p>
+            <p novaref="4805828" novatype="multi">
+              Pour les Données Personnelles collectées dans le cadre de la
+              création du compte personnel de l’Utilisateur et de sa navigation
+              sur le Site, le responsable du traitement des données à caractère
+              personnel est : Jean-Pascal PICOLLET.
+            </p>
+            <p novaref="4805828" novatype="multi">
+              En tant que responsable du traitement des données qu’il collecte,
+              https://www.domainedeverchant.com s’engage à respecter le cadre
+              des dispositions légales en vigueur. Il lui appartient notamment
+              au Client d’établir les finalités de ses traitements de données,
+              de fournir à ses prospects et clients, à partir de la collecte de
+              leurs consentements, une information complète sur le traitement de
+              leurs données personnelles et de maintenir un registre des
+              traitements conforme à la réalité.
+            </p>
+            <p novaref="4805828" novatype="multi">
+              Chaque fois que https://www.domainedeverchant.com traite des
+              données à caractère personnel, VERCHANT prend toutes les mesures
+              raisonnables pour s’assurer de l’exactitude et de la pertinence
+              des données à caractère personnel au regard des finalités pour
+              lesquelles https://www.domainedeverchant.com les traite.
+            </p>
+            <p novaref="4805828" novatype="multi">
+              6 - DIVULGATION DE DONNÉES À CARACTÈRE PERSONNEL À DES TIERS
+            </p>
+            <p novaref="4805828" novatype="multi">
+              https://www.domainedeverchant.com s’interdit de traiter, héberger
+              ou transférer les informations collectées sur ses clients vers un
+              pays situé en dehors de l’Union européenne ou reconnu comme « non
+              adéquat » par la Commission européenne sans en informer
+              préalablement le client. Pour autant,
+              https://www.domainedeverchant.com reste libre du choix de ses
+              sous-traitants techniques et commerciaux à la condition qu’il
+              présente les garanties suffisantes au regard des exigences du
+              Règlement Général sur la Protection des Données (RGPD : n°
+              2016-679).
+            </p>
+            <p novaref="4805828" novatype="multi">
+              https://www.domainedeverchant.com ne commercialise pas vos données
+              personnelles qui sont donc uniquement utilisées par nécessité ou à
+              des fins statistiques et d’analyses. Nous nous engageons à ne pas
+              vendre, échanger et transférer vos informations personnelles
+              identifiables à des tiers. S'il est nécessaire que VERCHANT
+              divulgue vos données à caractère personnel à des tiers, la tierce
+              partie concernée sera tenue d'utiliser vos données à caractère
+              personnel conformément aux dispositions de la présente « Politique
+              de Confidentialité ». Nous pensons qu’il est nécessaire de
+              partager des informations afin d’enquêter, de prévenir ou de
+              prendre des mesures concernant des activités illégales, fraudes
+              présumées, situations impliquant des menaces potentielles à la
+              sécurité physique de toute personne, violations de nos conditions
+              d’utilisation, ou quand la loi nous y contraint.
+            </p>
+            <p novaref="4805828" novatype="multi">
+              Nonobstant ce qui précède, il est toutefois possible que VERCHANT
+              divulgue vos données à caractère personnel :
+            </p>
+            <p novaref="4805828" novatype="multi">
+              Aux autorités compétentes lorsque VERCHANT y est tenue par la loi
+              ou dans le cadre d'une procédure judiciaire ou d'une procédure
+              judiciaire future et pour garantir et défendre nos droits.
+            </p>
+            <p novaref="4805828" novatype="multi">
+              Lorsque VERCHANT ou presque tous ses actifs sont repris par une
+              tierce partie, dans lequel cas vos données à caractère personnel,
+              que VERCHANT a collectées, constitueront l'un des actifs
+              transférés.
+            </p>
+            <p novaref="4805828" novatype="multi">
+              https://www.domainedeverchant.com s’engage à prendre toutes les
+              précautions nécessaires afin de préserver la sécurité des
+              informations et notamment qu’elles ne soient pas communiquées à
+              des personnes non autorisées. Cependant, si un incident impactant
+              l’intégrité ou la confidentialité des informations du client est
+              portée à la connaissance de https://www.domainedeverchant.com,
+              celle-ci devra dans les meilleurs délais informer le client et lui
+              communiquer les mesures de corrections prises. Par ailleurs
+              https://www.domainedeverchant.com ne collecte aucune « données
+              sensibles ».
+            </p>
+            <p novaref="4805828" novatype="multi">
+              Les données à caractère personnel de l’Utilisateur peuvent être
+              traitées par des filiales de https://www.domainedeverchant.com et
+              des sous-traitants (prestataires de services), exclusivement afin
+              de réaliser les finalités de la présente « Politique de
+              Confidentialité » comme :
+            </p>
+            <p novaref="4805828" novatype="multi">
+              Le prestataire en charge du ou des systèmes de réservation et de
+              paiement pour la gestion et la validation de votre demande.
+            </p>
+            <p novaref="4805828" novatype="multi">
+              Le prestataire de réalisation et de maintenance du site internet,
+              Diadao Productive, agence digitale.
+            </p>
+            <p novaref="4805828" novatype="multi">
+              Dans la limite de leurs attributions respectives et pour les
+              finalités rappelées ci-dessus, les principales personnes
+              susceptibles d’avoir accès aux données des Utilisateurs de
+              https://www.domainedeverchant.com sont principalement les agents
+              de notre service client.
+            </p>
+            <p novaref="4805828" novatype="multi">
+              Dans tous les autres cas, VERCHANT s'abstiendra de vendre, louer
+              ou transmettre vos données à caractère personnel à des tiers, sauf
+              quand elle a obtenu votre autorisation à cet égard et a conclu
+              avec la tierce partie concernée un contrat de traitement de
+              données, lequel contient les garanties nécessaires en matière de
+              confidentialité et de conformité de vos données à caractère
+              personnel à la protection de votre vie privée et professionnelle.
+              Si vous ne souhaitez pas que vos données à caractère personnel
+              soient partagées à des tiers, vous pouvez vous y opposer au moment
+              de la collecte ou à tout moment par la suite, tel que mentionné
+              dans la section « 8 - Droits relatifs à la protection de votre vie
+              privée ».
+            </p>
+            <p novaref="4805828" novatype="multi">
+              7 - STOCKAGE DES DONNÉES À CARACTÈRE PERSONNEL
+            </p>
+            <p novaref="4805828" novatype="multi">
+              Sauf quand un plus long délai de conservation est requis ou
+              justifié par la loi ou par le respect d'une autre obligation
+              légale comme 10 ans pour les documents comptables, VERCHANT
+              conservera vos données à caractère personnel pendant une durée de
+              36 mois pour un visiteur occasionnel et pendant une durée de 36
+              mois à partir de la date de check-out pour les clients de VERCHANT
+              afin d'atteindre et de remplir les objectifs tels que décrits dans
+              la déclaration de la « Politique de Confidentialité », sous le
+              point « 3 - Utilisation des données à caractère personnel ».
+            </p>
+            <p novaref="4805828" novatype="multi">
+              8 - DROITS RELATIFS À LA PROTECTION DE VOTRE VIE PRIVÉE
+            </p>
+            <p novaref="4805828" novatype="multi">
+              Conformément aux dispositions de la loi « Informatique et Libertés
+              » du 6 janvier 1978 modifiée et du Règlement Général sur la
+              Protection des Données (RGPD : n° 2016-679), les utilisateurs de
+              https://www.domainedeverchant.com peuvent faire appel à leurs
+              droits relatifs à la protection de la vie privée, tels que
+              stipulés ci-dessous :
+            </p>
+            <p novaref="4805828" novatype="multi">
+              Droit d’accès (article 15 RGPD) et de rectification (article 16
+              RGPD), de mise à jour, de complétude des données des Utilisateurs
+              droit de verrouillage ou d’effacement des données des Utilisateurs
+              à caractère personnel (article 17 du RGPD), lorsqu’elles sont
+              inexactes, incomplètes, équivoques, périmées, ou dont la collecte,
+              l’utilisation, la communication ou la conservation est interdite.
+            </p>
+            <p novaref="4805828" novatype="multi">
+              Droit de retirer à tout moment un consentement (article 13-2c
+              RGPD).
+            </p>
+            <p novaref="4805828" novatype="multi">
+              Droit à la limitation du traitement des données des Utilisateurs
+              (article 18 RGPD).
+            </p>
+            <p novaref="4805828" novatype="multi">
+              Droit d’opposition au traitement des données des Utilisateurs
+              (article 21 RGPD).
+            </p>
+            <p novaref="4805828" novatype="multi">
+              Droit à la portabilité des données que les Utilisateurs auront
+              fournies, lorsque ces données font l’objet de traitements
+              automatisés fondés sur leur consentement ou sur un contrat
+              (article 20 RGPD).
+            </p>
+            <p novaref="4805828" novatype="multi">
+              Droit de définir le sort des données des Utilisateurs après leur
+              mort et de choisir à qui https://www.domainedeverchant.com devra
+              communiquer (ou non) ses données à un tiers qu’il aura
+              préalablement désigné.
+            </p>
+            <p novaref="4805828" novatype="multi">
+              Dès que https://www.domainedeverchant.com a connaissance du décès
+              d’un Utilisateur et à défaut d’instructions de sa part, VERCHANT
+              s’engage à détruire ses données, sauf si leur conservation s’avère
+              nécessaire à des fins probatoires ou pour répondre à une
+              obligation légale.
+            </p>
+            <p novaref="4805828" novatype="multi">
+              Si l’Utilisateur souhaite pouvoir exercer ces droits sur
+              https://www.domainedeverchant.com, vous pouvez nous faire parvenir
+              un avis nous faisant part du ou des droits que vous souhaitez
+              faire appliquer dans l'utilisation de vos données à caractère
+              personnel. Vous pouvez exercer ces droits gratuitement en vous
+              adressant à Gérald Van Reck, en qualité de Directeur général, par
+              e-mail à contact@verchant.fr, ou par courrier à VERCHANT, 1 Chemin
+              de Verchant 34170 CASTELNAU LE LEZ - France, en précisant dans
+              l’objet de l'e-mail ou du courrier « Droits relatifs à la
+              protection de votre vie privée » ou en complétant le formulaire de
+              demande situé à l’adresse suivante :
+              https://www.domainedeverchant.com/fr/formulaire-rgpd
+            </p>
+            <p novaref="4805828" novatype="multi">
+              Dans ce cas, l’Utilisateur doit indiquer les données à caractère
+              personnel qu’il souhaiterait que https://www.domainedeverchant.com
+              corrige, mette à jour ou supprime, en s’identifiant précisément
+              avec une copie d’une pièce d’identité (carte d’identité ou
+              passeport). Les demandes de suppression de données à caractère
+              personnel seront soumises aux obligations qui sont imposées à
+              VERCHANT par la loi, notamment en matière de conservation ou
+              d’archivage des documents.
+            </p>
+            <p novaref="4805828" novatype="multi">
+              En outre, vous pouvez toujours actualiser, modifier et/ou
+              vérifier, par le biais de votre compte, vos données à caractère
+              personnel que vous avez dû communiquer au moment de la création de
+              votre compte client. Si vous ne désirez plus recevoir de
+              newsletters, de bulletins d'informations sur nos services ou de
+              publicités, vous pouvez vous désinscrire à tout moment en cliquant
+              sur le bouton « se désinscrire », tel que prévu dans la partie
+              inférieure de tout e-mail de VERCHANT.
+            </p>
+            <p novaref="4805828" novatype="multi">
+              9 - PROTECTION DES DONNÉES À CARACTÈRE PERSONNEL
+            </p>
+            <p novaref="4805828" novatype="multi">
+              VERCHANT s'engage à prendre les mesures de précaution
+              raisonnables, physiques, technologiques et organisationnelles pour
+              éviter l'accès non autorisé à vos données à caractère personnel,
+              ainsi que la perte, l'abus ou la modification de vos données à
+              caractère personnel. Nous utilisons un cryptage à la pointe de la
+              technologie pour protéger les informations sensibles transmises en
+              ligne. Nous protégeons également vos informations hors ligne.
+              Seuls les employés qui ont besoin d’effectuer un travail
+              spécifique (par exemple, la facturation ou le service à la
+              clientèle) ont accès aux informations personnelles identifiables.
+            </p>
+            <p novaref="4805828" novatype="multi">
+              Les données collectées et stockées via le Site
+              https://www.domainedeverchant.com sont hébergées par une société
+              externe, Sequoïasoft, qui fournit un logiciel de gestion de type
+              PMS (Product Management System) pour l'hébergement de la base de
+              données clients et le traitement des données. Le logiciel a pour
+              finalité la commercialisation et la gestion pour les
+              professionnels de l'hébergement, de la restauration, de
+              l'hôtellerie de plein air et des métiers du bien-être.
+            </p>
+            <p novaref="4805828" novatype="multi">
+              Sequoïasoft, logiciel de gestion de type PMS (Product Management
+              System) pour l'hébergement et le traitement des données, s'engage
+              à la :
+            </p>
+            <p novaref="4805828" novatype="multi">- Sécurité des réseaux</p>
+            <p novaref="4805828" novatype="multi">
+              - Sauvegarde des bases automatisées
+            </p>
+            <p novaref="4805828" novatype="multi">
+              - Protection contre les intrusions
+            </p>
+            <p novaref="4805828" novatype="multi">
+              - Sécurisation des serveurs
+            </p>
+            <p novaref="4805828" novatype="multi">
+              - Confidentialité des intervenants
+            </p>
+            <p novaref="4805828" novatype="multi">
+              Quels que soient les efforts fournis, aucune méthode de
+              transmission sur Internet et aucune méthode de stockage
+              électronique n’est complètement sûre. Nous ne pouvons en
+              conséquence pas garantir une sécurité absolue.
+            </p>
+            <p novaref="4805828" novatype="multi">
+              Si nous prenions connaissance d’une brèche de la sécurité, nous
+              avertirions les utilisateurs concernés afin qu’ils puissent
+              prendre les mesures appropriées. Nos procédures de notification
+              d’incident tiennent compte de nos obligations légales, qu’elles se
+              situent au niveau national ou européen. Nous nous engageons à
+              informer pleinement nos clients de toutes les questions relevant
+              de la sécurité de leur compte et à leur fournir toutes les
+              informations nécessaires pour les aider à respecter leurs propres
+              obligations réglementaires en matière de reporting.
+            </p>
+            <p novaref="4805828" novatype="multi">
+              Aucune information personnelle de l’utilisateur du site
+              https://www.domainedeverchant.com n’est publiée à l’insu de
+              l’utilisateur, échangée, transférée, cédée ou vendue sur un
+              support quelconque à des tiers.
+            </p>
+            <p novaref="4805828" novatype="multi">
+              10 - ACTUALISATION DE LA DÉCLARATION « POLITIQUE DE
+              CONFIDENTIALITÉ »
+            </p>
+            <p novaref="4805828" novatype="multi">
+              VERCHANT est habilitée à actualiser la présente déclaration «
+              Politique de Confidentialité » en installant une nouvelle version
+              sur le site web https://www.domainedeverchant.com. Il est
+              particulièrement indiqué de consulter régulièrement le site web et
+              la page concernée sur laquelle la « Politique de Confidentialité »
+              est reproduite, afin d'être certain que vous ayez connaissance des
+              nouvelles modalités.
+            </p>
+            <p novaref="4805828" novatype="multi">
+              11 - HYPERLIENS VERS D'AUTRES SITES INTERNET
+            </p>
+            <p novaref="4805828" novatype="multi">
+              Le site internet https://www.domainedeverchant.com peut contenir
+              des liens hypertextes qui mènent vers d'autres sites internet. En
+              aucun cas, VERCHANT ne peut être tenue pour responsable de la «
+              Politique de Confidentialité » ou des pratiques relatives à la vie
+              privée d'une quelconque tierce partie.
+            </p>
+            <p novaref="4805828" novatype="multi">12 - CONSENTEMENT</p>
+            <p novaref="4805828" novatype="multi">
+              En utilisant notre site web https://www.domainedeverchant.com,
+              vous avez l’obligation d’accepter la présente « Politique de
+              Confidentialité » ainsi que les « Conditions Générales
+              d’Utilisation » à travers les cases à cocher présentes lors de la
+              collecte des informations afin de pourvoir bénéficier des services
+              de VERCHANT.
+            </p>
+            <p novaref="4805828" novatype="multi">13 - RÉCLAMATIONS</p>
+            <p novaref="4805828" novatype="multi">
+              Lorsque vous avez des réclamations concernant la manière dont
+              VERCHANT collecte, utilise et/ou traite vos données à caractère
+              personnel, vous pouvez nous contacter, en tout premier lieu, pour
+              que nous résolvions le ou les réclamations. Si cela n'est pas
+              suffisant, les Utilisateurs de https://www.domainedeverchant.com
+              peuvent déposer une réclamation auprès des autorités de contrôle
+              et notamment de la Commission Nationale de l'Informatique et des
+              Libertés (CNIL) en suivant le lien suivant :
+              https://www.cnil.fr/fr/plaintes
+            </p>
+            <p novaref="4805828" novatype="multi">14 - CONTACTEZ VERCHANT</p>
+            <p novaref="4805828" novatype="multi">
+              Si vous avez des questions sur la « Politique de Confidentialité »
+              ou sur la manière dont VERCHANT collecte, utilise ou traite vos
+              données à caractère personnel, veuillez-nous contacter par e-mail
+              à contact@verchant.fr, ou par courrier à VERCHANT, 1 Chemin de
+              Verchant 34170 CASTELNAU LE LEZ - France.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section class="container container--newsletter container--bgcolor">
+      <div class="wrapper wrapper-with-bg" data-aos="slide-up">
+        <iframe
+          data-w-type="embedded"
+          frameborder="0"
+          scrolling="no"
+          marginheight="0"
+          marginwidth="0"
+          src="https://rl7m.mjt.lu/wgt/rl7m/xtr4/form?c=af940fe2"
+          width="100%"
+          style="height: 0"
+        ></iframe>
+        <script
+          type="text/javascript"
+          src="../../app.mailjet.com/pas-nc-embedded-v1.js"
+        ></script>
+      </div>
+    </section>
+    <footer>
+      <section class="footer-top">
+        <div class="wrapper">
+          <article class="column">
+            <a href="https://www.domainedeverchant.com/" class="logo-footer">
+              <img
+                alt="image"
+                class="img-responsive"
+                src="https://www.domainedeverchant.com/_img/logo-desktop.svg"
+              />
+            </a>
+            <ul class="social">
+              <li>
+                <a href="share.html" id="sharethis" class="sharethis">
+                  <span class="icon-share"></span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/DomainedeVerchant"
+                  target="_blank"
+                >
+                  <span class="icon-facebook"></span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/domainedeverchant/"
+                  target="_blank"
+                >
+                  <span class="icon-instagram-1"></span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/company/domaine-de-verchant"
+                  target="_blank"
+                >
+                  <span class="icon-linkedin"></span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/channel/UCOCuixk5KWX2JehGDVvzQVw"
+                  target="_blank"
+                >
+                  <span class="icon-youtube"></span>
+                </a>
+              </li>
+            </ul>
+            <div>
+              <a
+                class="footer-link"
+                editablelink="yes"
+                novaref="4805620"
+                novatype="txt"
+                data-global="1"
+                href="presse.html"
+                >Presse</a
+              ><br />
+              <a
+                class="footer-link"
+                editablelink="yes"
+                novaref="4805621"
+                novatype="txt"
+                data-global="1"
+                href="carrieres.html"
+                >Carrières</a
+              ><br />
+              <a
+                class="footer-link"
+                editablelink="yes"
+                novaref="4805622"
+                novatype="txt"
+                data-global="1"
+                href="https://www.domainedeverchant.com/download/110502"
+                >Protocole sanitaire</a
+              >
+            </div>
+          </article>
+          <article class="column">
+            <div class="row">
+              <ul class="footer-links">
+                <li novaref="4805552" novatype="txt" data-global="1">
+                  1 boulevard Philippe Lamour
+                </li>
+                <li novaref="4805553" novatype="txt" data-global="1">
+                  34170 Castelnau Le Lez - France
+                </li>
+                <li>
+                  <a
+                    class="footer-link"
+                    editablelink="yes"
+                    novaref="4805623"
+                    novatype="txt"
+                    data-global="1"
+                    href="plan.html"
+                    >Afficher la carte</a
+                  >
+                </li>
+              </ul>
+              <ul class="footer-links">
+                <li>
+                  Tél :
+                  <span novaref="4805592" novatype="txt" data-global="1"
+                    >+33 4 67 07 26 00</span
+                  >
+                </li>
+                <li>
+                  <a
+                    href="contact.html"
+                    novaref="4805555"
+                    data-global="1"
+                    novatype="txt"
+                    novaint="1"
+                    >reservation@verchant.com</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="footer-link"
+                    editablelink="yes"
+                    novaref="4805624"
+                    novatype="txt"
+                    data-global="1"
+                    href="contact.html"
+                    >Nous contacter</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="row">
+              <div class="footer-logos">
+                <img alt="image" src="../_img/logo-relais.png" width="65" />
+                <img alt="image" src="../_img/logo-virtuoso.png" width="200" />
+                <img
+                  alt="image"
+                  src="../_img/Michelin%202025.png"
+                  width="105"
+                />
+                <img alt="image" src="../_img/logo-gault.png" width="138" />
+                <img alt="image" src="../_img/logo-qualite.png" width="80" />
+                <img alt="image" src="../_img/image009.png" width="65" />
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="footer-bottom">
+        <div class="wrapper">
+          <ul class="footer-menu">
+            <li novaref="4805625" novatype="txt" data-global="1">CODES GDS</li>
+            <li novaref="4805625" novatype="txt" data-global="1">
+              AMADEUS : WBMPLDDV
+            </li>
+            <li novaref="4805625" novatype="txt" data-global="1">
+              SABRE : WB109583
+            </li>
+            <li novaref="4805625" novatype="txt" data-global="1">
+              GALILEO : WB42432
+            </li>
+            <li novaref="4805625" novatype="txt" data-global="1">
+              WORLDSPAN : WBMPLDV
+            </li>
+          </ul>
+          <ul class="footer-menu">
+            <li>
+              <a
+                editablelink="yes"
+                novaref="4809936"
+                novatype="txt"
+                data-global="1"
+                href="politique-confidentialite.html"
+                >Politique de confidentialité</a
+              >
+            </li>
+            <li>
+              <a
+                editablelink="yes"
+                novaref="4805626"
+                novatype="txt"
+                data-global="1"
+                href="conditions-d-utilisation.html"
+                target="_blank"
+                >Mentions légales & CGV</a
+              >
+            </li>
+            <li>
+              <a
+                editablelink="yes"
+                novaref="4805627"
+                novatype="txt"
+                data-global="1"
+                href="https://www.domainedeverchant.com/download/conditionsdesejoursgeneralsales2025.pdf"
+                target="_blank"
+                >Conditions de ventes</a
+              >
+            </li>
+            <li>
+              <a id="language_btn" class="lang-btn" href="javascript:void(0)"
+                >fr</a
+              >
+              <script type="text/javascript">
+                $$$(function () {
+                  $("#languages").dialog({
+                    bgiframe: true,
+                    modal: true,
+                    autoOpen: false,
+                    width: 400,
+                    height: "auto",
+                  });
+                  $(".lang-btn").click(function (event) {
+                    event.preventDefault();
+                    $("#languages").dialog("open");
+                    $(".sidebar-navigation").removeClass("open");
+                    $(".page").removeClass("open");
+                  });
+                });
+              </script>
+              <div id="languages" class="hideonload">
+                <div id="pulsarflaglist">
+                  <ul id="flag_menu">
+                    <li>
+                      <a
+                        class="big_flag_en"
+                        href="https://www.domainedeverchant.com/en/privacy-policy.html"
+                        >English</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="big_flag_fr"
+                        href="politique-confidentialite.html"
+                        >Français</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </footer>
+    <div
+      class="secondary-navigation"
+      data-aos="fade"
+      data-aos-delay="500"
+      data-aos-offset="-200"
+    >
+      <div class="inner">
+        <ul class="submenu" data-target="rooms">
+          <li>
+            <a
+              class="rooms-overview"
+              href="chambres-et-suites.html"
+              novaref="4805593"
+              novatype="txt"
+              data-global="1"
+              >Vue d'ensemble</a
+            >
+          </li>
+          <li>
+            <a
+              class="deluxe"
+              href="chambre-deluxe.html"
+              novaref="4805704"
+              novatype="txt"
+              data-global="1"
+              >Deluxe</a
+            >
+          </li>
+          <li>
+            <a
+              class="deluxe-terrace"
+              href="chambre-deluxe-terrasse.html"
+              novaref="4805705"
+              novatype="txt"
+              data-global="1"
+              >Deluxe Terrasse</a
+            >
+          </li>
+          <li>
+            <a
+              class="junior-suite"
+              href="suite-junior.html"
+              novaref="4805597"
+              novatype="txt"
+              data-global="1"
+              >Junior Suite</a
+            >
+          </li>
+          <li>
+            <a
+              class="junior-suite-terrace"
+              href="suite-junior-terrasse.html"
+              novaref="4805706"
+              novatype="txt"
+              data-global="1"
+              >Suite Junior Terrasse</a
+            >
+          </li>
+          <li>
+            <a
+              class="suite-prestige"
+              href="suite-prestige.html"
+              novaref="4805707"
+              novatype="txt"
+              data-global="1"
+              >Prestige Suite</a
+            >
+          </li>
+          <li>
+            <a
+              class="apartments"
+              href="petite-maison.html"
+              novaref="4805708"
+              novatype="txt"
+              data-global="1"
+              >Petite Maison</a
+            >
+          </li>
+          <li>
+            <a
+              class="small-house"
+              href="https://www.secure-hotel-booking.com/d-edge/Domaine-de-Verchant/JBCC/fr/RoomSelection"
+              novaref="4805709"
+              novatype="txt"
+              data-global="1"
+              target="_blank"
+              >Chambre Privilège avec Terrasse</a
+            >
+          </li>
+          <li>
+            <a
+              editable-link="yes"
+              novaref="5666024"
+              novatype="txt"
+              data-global="1"
+              href="https://www.secure-hotel-booking.com/d-edge/Domaine-de-Verchant/JBCC/fr/RoomSelection"
+              target="_blank"
+              >Junior Suite Privilège avec Terrasse</a
+            >
+          </li>
+          <li>
+            <a
+              editable-link="yes"
+              novaref="5666025"
+              novatype="txt"
+              data-global="1"
+              href="https://www.secure-hotel-booking.com/d-edge/Domaine-de-Verchant/JBCC/fr/RoomSelection"
+              target="_blank"
+              >Grande Suite Privilege avec Terrasse</a
+            >
+          </li>
+          <li>
+            <a
+              editable-link="yes"
+              novaref="5666026"
+              novatype="txt"
+              data-global="1"
+              href="https://www.secure-hotel-booking.com/d-edge/Domaine-de-Verchant/JBCC/fr/RoomSelection"
+              target="_blank"
+              >Suite Quintinae</a
+            >
+          </li>
+        </ul>
+        <ul class="submenu" data-target="maison">
+          <li>
+            <a
+              class="rooms-overview"
+              href="maison-verchant-rooms-overview.html"
+              novaref="4986217"
+              novatype="txt"
+              data-global="1"
+              >La Maison Verchant</a
+            >
+          </li>
+          <li>
+            <a
+              class="deluxe"
+              href="maison-verchant-deluxe.html"
+              novaref="4986218"
+              novatype="txt"
+              data-global="1"
+              >Chambre Double</a
+            >
+          </li>
+          <li>
+            <a
+              class="deluxe-terrace"
+              href="maison-verchant-junior-suite-terrace.html"
+              novaref="4986219"
+              novatype="txt"
+              data-global="1"
+              >Chambre avec bassin</a
+            >
+          </li>
+          <li>
+            <a
+              class="junior-suite"
+              href="maison-verchant-junior-suite.html"
+              novaref="4986220"
+              novatype="txt"
+              data-global="1"
+              >Pigeonnier</a
+            >
+          </li>
+          <li>
+            <a
+              class="junior-suite-terrace"
+              href="maison-verchant-junior-suite-terrace.html"
+              novaref="4986221"
+              novatype="txt"
+              data-global="1"
+            ></a>
+          </li>
+        </ul>
+        <ul class="submenu" data-target="hotel">
+          <li>
+            <a
+              class="history"
+              href="histoire.html"
+              novaref="4805710"
+              novatype="txt"
+              data-global="1"
+              >Histoire</a
+            >
+          </li>
+          <li>
+            <a
+              class="services"
+              href="services.html"
+              novaref="4805711"
+              novatype="txt"
+              data-global="1"
+              >Nos Services</a
+            >
+          </li>
+          <li>
+            <a
+              class="activities"
+              href="activites.html"
+              novaref="4805712"
+              novatype="txt"
+              data-global="1"
+              >Activités & Loisirs</a
+            >
+          </li>
+          <li>
+            <a
+              class="tourism"
+              href="tourisme.html"
+              novaref="4805713"
+              novatype="txt"
+              data-global="1"
+              >Aux alentours</a
+            >
+          </li>
+          <li>
+            <a
+              class="excursions"
+              href="excursions.html"
+              novaref="5052798"
+              novatype="txt"
+              data-global="1"
+              >Excursions</a
+            >
+          </li>
+        </ul>
+        <ul class="submenu" data-target="offers">
+          <li>
+            <a
+              editablelink="yes"
+              novaref="4805715"
+              novatype="txt"
+              data-global="1"
+              href="https://domainedeverchant.secretbox.fr/"
+              target="_blank"
+              >Coffrets Cadeaux</a
+            >
+          </li>
+          <li>
+            <a
+              class="special-offers"
+              href="offres-speciales.html"
+              novaref="4807055"
+              novatype="txt"
+              data-global="1"
+              >Offres spéciales</a
+            >
+          </li>
+          <li>
+            <a
+              editablelink="yes"
+              novaref="4805714"
+              novatype="txt"
+              data-global="1"
+              href="presse.html"
+              target="_blank"
+              >Presse</a
+            >
+          </li>
+        </ul>
+        <ul class="submenu" data-target="dining">
+          <li>
+            <a
+              class="marcelle-restaurant"
+              href="restaurant-marcelle.html"
+              novaref="4805716"
+              novatype="txt"
+              data-global="1"
+              >Marcelle</a
+            >
+          </li>
+          <li>
+            <a
+              class="la-plage-restaurant"
+              href="restaurant-la-plage.html"
+              novaref="4805717"
+              novatype="txt"
+              data-global="1"
+              >La Plage</a
+            >
+          </li>
+          <li>
+            <a
+              class="breakfast-and-tea-time"
+              href="petit-dejeuner.html"
+              novaref="4805718"
+              novatype="txt"
+              data-global="1"
+              >Petit-déjeuner</a
+            >
+          </li>
+        </ul>
+        <ul class="submenu" data-target="events">
+          <li>
+            <a
+              class="weddings"
+              href="mariages.html"
+              novaref="4805719"
+              novatype="txt"
+              data-global="1"
+              >Mariages & Evènements privés</a
+            >
+          </li>
+          <li>
+            <a
+              class="meetings"
+              href="reunions.html"
+              novaref="4805598"
+              novatype="txt"
+              data-global="1"
+              >Réunions & Séminaires</a
+            >
+          </li>
+          <li>
+            <a
+              class="voyage-affaires"
+              href="voyage-affaires.html"
+              novaref="5166747"
+              novatype="txt"
+              data-global="1"
+              >voyage-affaires</a
+            >
+          </li>
+          <li>
+            <a
+              class="request-proposal"
+              href="demander-un-devis.html"
+              novaref="4805600"
+              novatype="txt"
+              data-global="1"
+              >Demander un devis</a
+            >
+          </li>
+        </ul>
+        <ul class="submenu" data-target="program">
+          <li>
+            <a
+              class="plage"
+              href="programmation-la-plage.html"
+              novaref="4914862"
+              novatype="txt"
+              data-global="1"
+              >Programme</a
+            >
+          </li>
+          <li>
+            <a
+              class="marcelle"
+              href="programmation-marcelle.html"
+              novaref="4914863"
+              novatype="txt"
+              data-global="1"
+              >Menus</a
+            >
+          </li>
+          <li>
+            <a
+              class="rendez"
+              href="rendez-vous-vins.html"
+              novaref="4914864"
+              novatype="txt"
+              data-global="1"
+              >Bons cadeaux</a
+            >
+          </li>
+          <li>
+            <a
+              class="programmation"
+              href="programmation.html"
+              novaref="4914865"
+              novatype="txt"
+              data-global="1"
+            ></a>
+          </li>
+        </ul>
+        <ul class="submenu" data-target="maison-verchant">
+          <li>
+            <a
+              class="maison-verchant-rooms-overview"
+              href="maison-verchant-rooms-overview.html"
+              novaref="4986217"
+              novatype="txt"
+              data-global="1"
+              >La Maison Verchant</a
+            >
+          </li>
+          <li>
+            <a
+              class="deluxe"
+              href="maison-verchant-deluxe.html"
+              novaref="4986218"
+              novatype="txt"
+              data-global="1"
+              >Chambre Double</a
+            >
+          </li>
+          <li>
+            <a
+              class="deluxe-terrace"
+              href="maison-verchant-junior-suite-terrace.html"
+              novaref="4986219"
+              novatype="txt"
+              data-global="1"
+              >Chambre avec bassin</a
+            >
+          </li>
+          <li>
+            <a
+              class="junior-suite"
+              href="maison-verchant-junior-suite.html"
+              novaref="4986220"
+              novatype="txt"
+              data-global="1"
+              >Pigeonnier</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="global-overlay" class="global-overlay"></div>
+    <div id="sidebar-navigation" class="sidebar-navigation">
+      <div class="inner">
+        <a id="sidebar-navigation-close" class="sidebar-nav-close hide-mobile"
+          ><span class="icon-close"></span
+        ></a>
+        <nav>
+          <ul class="menu menu-state menu-trigger" data-submenu="true">
+            <li class="rooms dropdown-hover">
+              <a
+                class="rooms dropdown-btn"
+                href="https://www.domainedeverchant.com/#"
+                novaref="4805526"
+                novatype="txt"
+                data-global="1"
+                >Chambres & Suites</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a
+                    class="rooms-overview"
+                    href="chambres-et-suites.html"
+                    novaref="4805593"
+                    novatype="txt"
+                    data-global="1"
+                    >Vue d'ensemble</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="deluxe"
+                    href="chambre-deluxe.html"
+                    novaref="4805704"
+                    novatype="txt"
+                    data-global="1"
+                    >Deluxe</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="deluxe-terrace"
+                    href="chambre-deluxe-terrasse.html"
+                    novaref="4805705"
+                    novatype="txt"
+                    data-global="1"
+                    >Deluxe Terrasse</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="junior-suite"
+                    href="suite-junior.html"
+                    novaref="4805597"
+                    novatype="txt"
+                    data-global="1"
+                    >Junior Suite</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="junior-suite-terrace"
+                    href="suite-junior-terrasse.html"
+                    novaref="4805706"
+                    novatype="txt"
+                    data-global="1"
+                    >Suite Junior Terrasse</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="suite-prestige"
+                    href="suite-prestige.html"
+                    novaref="4805707"
+                    novatype="txt"
+                    data-global="1"
+                    >Prestige Suite</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="apartments"
+                    href="petite-maison.html"
+                    novaref="4805708"
+                    novatype="txt"
+                    data-global="1"
+                    >Petite Maison</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="small-house"
+                    href="https://www.secure-hotel-booking.com/d-edge/Domaine-de-Verchant/JBCC/fr/RoomSelection"
+                    novaref="4805709"
+                    novatype="txt"
+                    data-global="1"
+                    target="_blank"
+                    >Chambre Privilège avec Terrasse</a
+                  >
+                </li>
+                <li>
+                  <a
+                    editable-link="yes"
+                    novaref="5666024"
+                    novatype="txt"
+                    data-global="1"
+                    href="https://www.secure-hotel-booking.com/d-edge/Domaine-de-Verchant/JBCC/fr/RoomSelection"
+                    target="_blank"
+                    >Junior Suite Privilège avec Terrasse</a
+                  >
+                </li>
+                <li>
+                  <a
+                    editable-link="yes"
+                    novaref="5666025"
+                    novatype="txt"
+                    data-global="1"
+                    href="https://www.secure-hotel-booking.com/d-edge/Domaine-de-Verchant/JBCC/fr/RoomSelection"
+                    target="_blank"
+                    >Grande Suite Privilege avec Terrasse</a
+                  >
+                </li>
+                <li>
+                  <a
+                    editable-link="yes"
+                    novaref="5666026"
+                    novatype="txt"
+                    data-global="1"
+                    href="https://www.secure-hotel-booking.com/d-edge/Domaine-de-Verchant/JBCC/fr/RoomSelection"
+                    target="_blank"
+                    >Suite Quintinae</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="hotel dropdown-hover">
+              <a
+                class="hotel dropdown-btn"
+                href="https://www.domainedeverchant.com/#"
+                novaref="4805529"
+                novatype="txt"
+                data-global="1"
+                >L'hôtel</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a
+                    class="history"
+                    href="histoire.html"
+                    novaref="4805710"
+                    novatype="txt"
+                    data-global="1"
+                    >Histoire</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="services"
+                    href="services.html"
+                    novaref="4805711"
+                    novatype="txt"
+                    data-global="1"
+                    >Nos Services</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="activities"
+                    href="activites.html"
+                    novaref="4805712"
+                    novatype="txt"
+                    data-global="1"
+                    >Activités & Loisirs</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="tourism"
+                    href="tourisme.html"
+                    novaref="4805713"
+                    novatype="txt"
+                    data-global="1"
+                    >Aux alentours</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="excursions"
+                    href="excursions.html"
+                    novaref="5052798"
+                    novatype="txt"
+                    data-global="1"
+                    >Excursions</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="maison dropdown-hover">
+              <a
+                class="maison dropdown-btn"
+                href="https://www.domainedeverchant.com/#"
+                novaref="4986216"
+                novatype="txt"
+                data-global="1"
+                >Maison Verchant</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a
+                    class="rooms-overview"
+                    href="maison-verchant-rooms-overview.html"
+                    novaref="4986217"
+                    novatype="txt"
+                    data-global="1"
+                    >La Maison Verchant</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="deluxe"
+                    href="maison-verchant-deluxe.html"
+                    novaref="4986218"
+                    novatype="txt"
+                    data-global="1"
+                    >Chambre Double</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="deluxe-terrace"
+                    href="maison-verchant-junior-suite-terrace.html"
+                    novaref="4986219"
+                    novatype="txt"
+                    data-global="1"
+                    >Chambre avec bassin</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="junior-suite"
+                    href="maison-verchant-junior-suite.html"
+                    novaref="4986220"
+                    novatype="txt"
+                    data-global="1"
+                    >Pigeonnier</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="junior-suite-terrace"
+                    href="maison-verchant-junior-suite-terrace.html"
+                    novaref="4986221"
+                    novatype="txt"
+                    data-global="1"
+                  ></a>
+                </li>
+              </ul>
+            </li>
+            <li class="sarnelly">
+              <a
+                class="villa-sarnelly"
+                href="villa-sarnelly.html"
+                novaref="5038466"
+                novatype="txt"
+                data-global="1"
+                >Villa Sarnelly</a
+              >
+            </li>
+            <li class="offers dropdown-hover">
+              <a
+                class="offers dropdown-btn"
+                href="https://www.domainedeverchant.com/#"
+                novaref="4805530"
+                novatype="txt"
+                data-global="1"
+                >Coffrets cadeaux & Offres</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a
+                    editablelink="yes"
+                    novaref="4805715"
+                    novatype="txt"
+                    data-global="1"
+                    href="https://domainedeverchant.secretbox.fr/"
+                    target="_blank"
+                    >Coffrets Cadeaux</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="special-offers"
+                    href="offres-speciales.html"
+                    novaref="4807055"
+                    novatype="txt"
+                    data-global="1"
+                    >Offres spéciales</a
+                  >
+                </li>
+                <li>
+                  <a
+                    editablelink="yes"
+                    novaref="4805714"
+                    novatype="txt"
+                    data-global="1"
+                    href="presse.html"
+                    target="_blank"
+                    >Presse</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="dining dropdown-hover">
+              <a
+                class="dining dropdown-btn"
+                href="https://www.domainedeverchant.com/#"
+                novaref="4805720"
+                novatype="txt"
+                data-global="1"
+                >Restaurants</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a
+                    class="marcelle-restaurant"
+                    href="restaurant-marcelle.html"
+                    novaref="4805716"
+                    novatype="txt"
+                    data-global="1"
+                    >Marcelle</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="la-plage-restaurant"
+                    href="restaurant-la-plage.html"
+                    novaref="4805717"
+                    novatype="txt"
+                    data-global="1"
+                    >La Plage</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="breakfast-and-tea-time"
+                    href="petit-dejeuner.html"
+                    novaref="4805718"
+                    novatype="txt"
+                    data-global="1"
+                    >Petit-déjeuner</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="spa">
+              <a
+                class="spa"
+                href="spa.html"
+                novaref="4805602"
+                novatype="txt"
+                data-global="1"
+                >Spa & Bien-Être</a
+              >
+            </li>
+            <li class="events dropdown-hover">
+              <a
+                class="events dropdown-btn"
+                href="https://www.domainedeverchant.com/#"
+                novaref="4805721"
+                novatype="txt"
+                data-global="1"
+                >Évènements</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a
+                    class="weddings"
+                    href="mariages.html"
+                    novaref="4805719"
+                    novatype="txt"
+                    data-global="1"
+                    >Mariages & Evènements privés</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="meetings"
+                    href="reunions.html"
+                    novaref="4805598"
+                    novatype="txt"
+                    data-global="1"
+                    >Réunions & Séminaires</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="voyage-affaires"
+                    href="voyage-affaires.html"
+                    novaref="5166747"
+                    novatype="txt"
+                    data-global="1"
+                    >voyage-affaires</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="request-proposal"
+                    href="demander-un-devis.html"
+                    novaref="4805600"
+                    novatype="txt"
+                    data-global="1"
+                    >Demander un devis</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="wines">
+              <a
+                class="wines"
+                href="nos-vins.html"
+                novaref="4805722"
+                novatype="txt"
+                data-global="1"
+                >Vignoble & Cave</a
+              >
+            </li>
+            <li class="program">
+              <a
+                class="program"
+                href="programmation-la-plage.html"
+                novaref="4914866"
+                novatype="txt"
+                data-global="1"
+              ></a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="menu menu-state menu-alt">
+          <li>
+            <a
+              class="map"
+              href="plan.html"
+              novaref="4805533"
+              novatype="txt"
+              data-global="1"
+              >Plan & Accès</a
+            >
+          </li>
+          <li>
+            <a
+              class="gallery"
+              href="galerie.html"
+              novaref="4805531"
+              novatype="txt"
+              data-global="1"
+              >Photos</a
+            >
+          </li>
+          <li>
+            <a
+              class="blog"
+              href="https://www.domainedeverchant.com/blog/fr/"
+              novaref="5563535"
+              novatype="txt"
+              data-global="1"
+              >Blog</a
+            >
+          </li>
+          <li>
+            <a
+              class="press"
+              editablelink="yes"
+              novaref="4805714"
+              novatype="txt"
+              data-global="1"
+              href="presse.html"
+              target="_blank"
+              >Presse</a
+            >
+          </li>
+          <li>
+            <a
+              class="careers"
+              editablelink="yes"
+              novaref="4910352"
+              novatype="txt"
+              data-global="1"
+              href="carrieres.html"
+              >Carrières</a
+            >
+          </li>
+          <li>
+            <a
+              class="contact"
+              href="contact.html"
+              novaref="4805534"
+              novatype="txt"
+              data-global="1"
+              >Contactez-nous</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="menu-images hide-mobile flex">
+        <img
+          id="default"
+          class="img-fit active"
+          src="../_img/menu-default.jpg"
+          novaref="5150064"
+          novatype="img"
+          alt="Le Domaine de Verchant"
+          width="2000"
+          height="1400"
+        />
+        <img
+          id="bg-hotel"
+          class="img-fit"
+          src="../_img/menu-hotel.jpg"
+          novaref="5150065"
+          novatype="img"
+          alt="Le Domaine de Verchant"
+          width="2000"
+          height="1400"
+        /><img
+          id="bg-rooms"
+          class="img-fit"
+          src="../_img/menu-rooms.jpg"
+          novaref="5150066"
+          novatype="img"
+          alt="Le Domaine de Verchant"
+          width="2000"
+          height="1400"
+        />
+        <img
+          id="bg-offers"
+          class="img-fit"
+          src="../_img/menu-offers.jpg"
+          novaref="5150067"
+          novatype="img"
+          alt="Le Domaine de Verchant"
+          width="2000"
+          height="1400"
+        />
+        <img
+          id="bg-dining"
+          class="img-fit"
+          src="../_img/menu-dining.jpg"
+          novaref="5150068"
+          novatype="img"
+          alt="Le Domaine de Verchant"
+          width="2000"
+          height="1400"
+        />
+        <img
+          id="bg-spa"
+          class="img-fit"
+          src="../_img/menu-spa.jpg"
+          novaref="5150069"
+          novatype="img"
+          alt="Le Domaine de Verchant"
+          width="2000"
+          height="1400"
+        />
+        <img
+          id="bg-events"
+          class="img-fit"
+          src="../_img/menu-events.jpg"
+          novaref="5150070"
+          novatype="img"
+          alt="Le Domaine de Verchant"
+          width="2000"
+          height="1400"
+        />
+        <img
+          id="bg-wines"
+          class="img-fit"
+          src="../_img/menu-wines.jpg"
+          novaref="5150070"
+          novatype="img"
+          alt="Le Domaine de Verchant"
+          width="2000"
+          height="1400"
+        />
+        <img
+          id="bg-maison"
+          class="img-fit"
+          src="../_img/menu-maison.jpg"
+          novaref="5150071"
+          novatype="img"
+          alt="Le Domaine de Verchant"
+          width="2000"
+          height="1400"
+        />
+        <img
+          id="bg-sarnelly"
+          class="img-fit"
+          src="../_img/menu-sarnelly.jpg"
+          novaref="5150072"
+          novatype="img"
+          alt="Le Domaine de Verchant"
+          width="2000"
+          height="1400"
+        />
+        <img
+          id="bg-program"
+          class="img-fit"
+          src="../_img/menu-program.jpg"
+          novaref="5150073"
+          novatype="img"
+          alt="Le Domaine de Verchant"
+          width="2000"
+          height="1400"
+        />
+        <div class="overlay"></div>
+      </div>
+    </div>
+    <div class="btn-mobile-sidebar btn-nav hide-desktop">
+      <div class="hamburger-wrap">
+        <span></span> <span></span> <span></span>
+      </div>
+    </div>
+    <div class="footer-bar-mobile hide-desktop">
+      <a
+        class="btn btn-footer-bar book-menu-open"
+        editablelink="yes"
+        novaref="5188364"
+        novatype="txt"
+        data-global="1"
+        href="https://www.secure-hotel-booking.com/touch/Domaine-de-Verchant/JBCC/?0.1591797762.1693828531-395369000.1688733366&amp;_gl=1*1uo1xtu*_ga*Mzk1MzY5MDAwLjE2ODg3MzMzNjY.*_ga_LY25P65G7N*MTY5MzkyNDQxMS45LjAuMTY5MzkyNDQxMS42MC4wLjA."
+        >Réserver</a
+      >
+      <a
+        class="btn-footer-gift"
+        editablelink="yes"
+        novaref="4895267"
+        novatype="txt"
+        data-global="1"
+        href="https://domainedeverchant.secretbox.fr/"
+        target="_blank"
+        >COFFRETS CADEAUX</a
+      >
+    </div>
+    <input type="hidden" id="site_id" value="182893" />
+    <input type="hidden" id="synx_dateformat" value="dd-mm-yyyy" />
+    <input type="hidden" id="synx_idln" value="3" />
+    <input type="hidden" id="synx_idhotel" value="0" />
+    <input type="hidden" id="synx_idchain" value="12218" />
+    <input type="hidden" id="synx_template" value="" />
+    <input type="hidden" id="synx_shell" value="" />
+    <input type="hidden" id="synxis_additiveformparams" value="" />
+    <input type="hidden" id="general_idln" value="2" />
+    <input type="hidden" id="general_ln" value="fr" />
+    <input type="hidden" id="front_ln" value="en" />
+    <input type="hidden" id="site_langs" value="en,fr" />
+    <input type="hidden" id="site_langs_published" value="en,fr" />
+    <input type="hidden" id="availpro_hotel" value="Domaine-de-Verchant" />
+    <input type="hidden" id="availpro_engine" value="JBCC" />
+    <input type="hidden" id="usecdn" value="" />
+    <input type="hidden" id="analytics_ecommerce" value="" />
+    <input type="hidden" id="page_id" value="7121" />
+    <input type="hidden" id="page_filename" value="privacy-policy.html" />
+    <input type="hidden" id="baseurlwithln" value="domainedeverchant.com/fr/" />
+    <input
+      type="hidden"
+      id="current_page_url"
+      value="http://domainedeverchant.com/fr/privacy-policy.html"
+    />
+    <input type="hidden" id="flag_cms_active" value="0" />
+    <input type="hidden" id="flag_using_webp" value="0" />
+    <input type="hidden" id="flag_using_hd_gallery" value="1" />
+    <a
+      href="javascript:void(0)"
+      title="novaadmin"
+      onClick="novacmsadm.loadjsadm();"
+      pulsarln="2"
+      novaid="182893"
+      class="novaadmin"
+      style="display: none"
+    ></a>
+    <script
+      src="../../www.thehotelsnetwork.com/js/loader4cee.js?property_id=1033916&amp;account_key=C94DA20035FFDCC27BD1609EAF40DEE4"
+      async
+    ></script>
+    <script type="text/javascript">
+      nova_post2js = [];
+    </script>
+    <script type="text/javascript">
+      function getbyclass(a) {
+        if (document.getElementsByClassName) {
+          return document.getElementsByClassName(a);
+        } else {
+          var b = [];
+          var c = document.body.getElementsByTagName("*");
+          var d = c.length;
+          for (var e = 0; e < d; e++) {
+            try {
+              var f = c[e].className || c[e].getAttribute("class") || "no";
+              if (f.indexOf(a) > -1) {
+                b.push(c[e]);
+              }
+            } catch (g) {}
+          }
+          return b;
+        }
+      }
+      var tohide = getbyclass("hideonload");
+      for (var i = 0, l = tohide.length; i < l; i++) {
+        tohide[i].style.display = "none";
+      }
+    </script>
+  </body>
+  <!-- Mirrored from www.domainedeverchant.com/fr/politique-confidentialite.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 29 Sep 2025 08:26:33 GMT -->
+</html>
