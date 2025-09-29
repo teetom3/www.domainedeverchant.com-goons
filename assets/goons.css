@@ -1,10 +1,10 @@
 /* Bandeau Goons — violet + sticky */
 #goons-banner {
-  position: sticky; /* reste en haut au scroll */
-  top: 0;
+  position: fixed; /* reste en haut au scroll */
+  bottom: 0;
   z-index: 9999; /* au-dessus du header et overlays */
   width: 100%;
-  background: #6c2bd9; /* violet Goons, adapte si besoin (#7c3aed / #8b5cf6) */
+  background: #4f4c74; /* violet Goons, adapte si besoin (#7c3aed / #8b5cf6) */
   color: #fff;
   font-family: "Open Sans", system-ui, -apple-system, Segoe UI, Roboto, Arial,
     sans-serif;
@@ -24,8 +24,8 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 28px;
-  height: 28px;
+  width: 70px;
+  height: 70px;
 }
 
 #goons-banner .goons-logo img {

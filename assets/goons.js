@@ -9,8 +9,8 @@
       '<div class="goons-inner">' +
       '<span class="goons-logo"><img src="' +
       (window.location.pathname.includes("/fr/") ? "../" : "./") +
-      '_img/goons-logo.svg" alt="Goons"></span>' +
-      '<span class="goons-text">Propulsé par <strong>Goons</strong> — création & performance web</span>' +
+      '/assets/images/footer-logo-degrade.png" alt="Goons"></span>' +
+      '<span class="goons-text">Plateforme hébergée par goons </span>' +
       '<a class="goons-link" href="https://goons.fr/" target="_blank" rel="noopener">Découvrir</a>' +
       "</div>";
 
