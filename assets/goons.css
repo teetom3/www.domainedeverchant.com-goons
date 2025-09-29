@@ -14,7 +14,6 @@
 #goons-banner .goons-inner {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 10px 10px;
   display: flex;
   align-items: center;
   gap: 12px;
